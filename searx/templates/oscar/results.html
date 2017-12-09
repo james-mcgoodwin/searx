@@ -17,8 +17,8 @@
             <h1 class="sr-only">{{ _('Search results') }}</h1>
 
             {% if corrections %}
-            <div class="result">
-                <span class="result_header text-muted form-inline pull-left suggestion_item">{{ _('Try searching for:') }}</span>
+            <div class="result h4">
+                <span class="result_header form-inline pull-left suggestion_item"style="margin-bottom:30px;margin-left:0px;">{{ _('Did you mean:') }}</span>
                 {% for correction in corrections %}
                     <form method="{{ method or 'POST' }}" action="{{ url_for('index') }}" role="navigation" class="form-inline pull-left suggestion_item">
                         <input type="hidden" name="q" value="{{ correction }}">
