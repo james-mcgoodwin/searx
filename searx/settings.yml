@@ -9,9 +9,9 @@ search:
 
 server:
     port : 8888
-    bind_address : "127.0.0.1" # address to listen on
-    secret_key : "ultrasecretkey" # change this!
-    base_url : False # Set custom base_url. Possible values: False or "https://your.custom.host/location/"
+    bind_address : "10.10.10.186" # address to listen on
+    secret_key : "7576a8f552459724405f8038b23e74a4" # change this!
+    base_url : http://searx.dennet.info/searx/ # Set custom base_url. Possible values: False or "https://your.custom.host/location/"
     image_proxy : False # Proxying image results through searx
     http_protocol_version : "1.0"  # 1.0 and 1.1 are supported
 
@@ -19,6 +19,7 @@ ui:
     static_path : "" # Custom static path - leave it blank if you didn't change
     templates_path : "" # Custom templates path - leave it blank if you didn't change
     default_theme : oscar # ui theme
+    default_style : Pointhi # ui style
     default_locale : "" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
 
 # searx supports result proxification using an external service: https://github.com/asciimoo/morty
@@ -78,18 +79,22 @@ engines:
   - name : bing
     engine : bing
     shortcut : bi
+    disabled : True
 
   - name : bing images
     engine : bing_images
     shortcut : bii
+    disabled : True
 
   - name : bing news
     engine : bing_news
     shortcut : bin
+    disabled : True
 
   - name : bing videos
     engine : bing_videos
     shortcut : biv
+    disabled : True
 
   - name : bitbucket
     engine : xpath
