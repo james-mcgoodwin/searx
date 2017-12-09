@@ -4,7 +4,7 @@ general:
 
 search:
     safe_search : 0 # Filter results. 0: None, 1: Moderate, 2: Strict
-    autocomplete : "" # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "startpage", "wikipedia" - leave blank to turn it off by default
+    autocomplete : "google" # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "startpage", "wikipedia" - leave blank to turn it off by default
     language : "en-US"
 
 server:
@@ -19,7 +19,6 @@ ui:
     static_path : "" # Custom static path - leave it blank if you didn't change
     templates_path : "" # Custom templates path - leave it blank if you didn't change
     default_theme : oscar # ui theme
-    default_style : Pointhi # ui style
     default_locale : "" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
 
 # searx supports result proxification using an external service: https://github.com/asciimoo/morty
