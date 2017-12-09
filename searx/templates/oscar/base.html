@@ -16,7 +16,7 @@
     {% if preferences.get_value('oscar-style') %}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/'+preferences.get_value('oscar-style')+'.min.css') }}" type="text/css" />
     {% else %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/logicodev.min.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pointhi.min.css') }}" type="text/css" />
     {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.min.css') }}" type="text/css" />
     {% for css in styles %}
