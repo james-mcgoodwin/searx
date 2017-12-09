@@ -263,7 +263,7 @@ class Preferences(object):
                                                                                                     '1': 1,
                                                                                                     '2': 2}),
                                    'theme': EnumStringSetting(settings['ui']['default_theme'], choices=themes),
-                                   'results_on_new_tab': MapSetting(False, map={'0': False,
+                                   'results_on_new_tab': MapSetting(True, map={'0': False,
                                                                                 '1': True,
                                                                                 'False': False,
                                                                                 'True': True}),
