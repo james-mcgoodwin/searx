@@ -12,7 +12,7 @@ server:
     bind_address : "10.10.10.186" # address to listen on
     secret_key : "7576a8f552459724405f8038b23e74a4" # change this!
     base_url : http://searx.dennet.info/searx/ # Set custom base_url. Possible values: False or "https://your.custom.host/location/"
-    image_proxy : False # Proxying image results through searx
+    image_proxy : true # Proxying image results through searx
     http_protocol_version : "1.0"  # 1.0 and 1.1 are supported
 
 ui:
@@ -28,7 +28,7 @@ ui:
 #    key : your_morty_proxy_key
 
 outgoing: # communication with search engines
-    request_timeout : 2.0 # seconds
+    request_timeout : 4.0 # seconds
     useragent_suffix : "" # suffix of searx_useragent, could contain informations like an email address to the administrator
     pool_connections : 100 # Number of different hosts
     pool_maxsize : 10 # Number of simultaneous requests by host
