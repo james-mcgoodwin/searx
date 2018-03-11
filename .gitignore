@@ -17,3 +17,10 @@ setup.cfg
 node_modules/
 
 .tx/
+
+.bash_history
+.cache/
+.gitconfig
+.rnd
+.ssh/
+.viminfo
