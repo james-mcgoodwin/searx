@@ -9,7 +9,7 @@ search:
 
 server:
     port : 8888
-    bind_address : "10.10.10.186" # address to listen on
+    bind_address : "10.10.10.62" # address to listen on
     secret_key : "7576a8f552459724405f8038b23e74a4" # change this!
     base_url : http://searx.dennet.info/searx/ # Set custom base_url. Possible values: False or "https://your.custom.host/location/"
     image_proxy : true # Proxying image results through searx

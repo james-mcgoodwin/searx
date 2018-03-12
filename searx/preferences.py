@@ -258,7 +258,7 @@ class Preferences(object):
                                                                   '1': True,
                                                                   'True': True,
                                                                   'False': False}),
-                                   'method': EnumStringSetting('POST', choices=('GET', 'POST')),
+                                   'method': EnumStringSetting('GET', choices=('GET', 'POST')),
                                    'safesearch': MapSetting(settings['search']['safe_search'], map={'0': 0,
                                                                                                     '1': 1,
                                                                                                     '2': 2}),
