@@ -178,6 +178,7 @@ engines:
   - name : wikidata
     engine : wikidata
     shortcut : wd
+    timeout : 3.0
     weight : 2
 
   - name : duckduckgo
@@ -220,6 +221,24 @@ engines:
   - name : fdroid
     engine : fdroid
     shortcut : fd
+    disabled : True
+
+  - name : findx
+    engine : findx
+    shortcut : fx
+    categories : general
+    disabled : True
+
+  - name : findx images
+    engine : findx
+    shortcut : fxi
+    categories : images
+    disabled : True
+
+  - name : findx videos
+    engine : findx
+    shortcut : fxv
+    categories : videos
     disabled : True
 
   - name : flickr
@@ -727,6 +746,7 @@ locales:
     it : Italiano (Italian)
     ja : 日本語 (Japanese)
     nl : Nederlands (Dutch)
+    pl : Polszczyzna (Polish)
     pt : Português (Portuguese)
     pt_BR : Português (Portuguese_Brazil)
     ro : Română (Romanian)
